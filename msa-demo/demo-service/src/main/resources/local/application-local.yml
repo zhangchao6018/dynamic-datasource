@@ -1,0 +1,18 @@
+#服务端口
+server:
+  port: 11071
+
+app:
+  id: msa-demo
+apollo: 
+  meta: http://192.168.2.65:8080
+  bootstrap: 
+    enabled: true
+    namespaces: application,100001.common-config 
+jasypt: 
+  encryptor:
+    password: klklklklkl
+
+logging: 
+  config: classpath:local/log4j2.xml
+
